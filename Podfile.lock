@@ -1,0 +1,171 @@
+PODS:
+  - ActiveLabel (0.9.0)
+  - Alamofire (4.7.3)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Crashlytics (3.10.5):
+    - Fabric (~> 1.7.9)
+  - DateTools (2.0.0)
+  - Fabric (1.7.9)
+  - FBSDKCoreKit (4.35.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.35.0):
+    - FBSDKCoreKit
+  - FBSDKMessengerShareKit (1.3.2)
+  - FBSDKShareKit (4.35.0):
+    - FBSDKCoreKit (~> 4.35.0)
+  - Firebase/Core (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.0.1)
+  - Firebase/CoreOnly (5.4.1):
+    - FirebaseCore (= 5.0.6)
+  - FirebaseAnalytics (5.0.1):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.0.6):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (3.1.1):
+    - FirebaseCore (~> 5.0)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GrowingTextView (0.5.6)
+  - iRate (1.12.2)
+  - JXHTTP (3.0.2)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - OpenGraph (1.0.3)
+  - pop (1.0.10)
+  - SDAVAssetExportSession (0.0.4)
+  - Spectacles (1.0.1)
+  - Starscream (3.0.5)
+  - SwipeView (1.3.2)
+  - TagListView (1.2.0)
+  - TMTumblrSDK/APIClient (4.0.5):
+    - JXHTTP
+    - TMTumblrSDK/APIClient/Authentication (= 4.0.5)
+  - TMTumblrSDK/APIClient/Authentication (4.0.5):
+    - JXHTTP
+    - TMTumblrSDK/Core
+  - TMTumblrSDK/Core (4.0.5):
+    - Spectacles (~> 1.0)
+  - TwitterCore (3.2.0)
+  - TwitterKit (3.4.0):
+    - TwitterCore (>= 3.1.0)
+  - XLActionController (4.0.1):
+    - XLActionController/Core (= 4.0.1)
+  - XLActionController/Core (4.0.1)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - Alamofire
+  - AlamofireImage
+  - Crashlytics
+  - DateTools
+  - Fabric
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKMessengerShareKit
+  - FBSDKShareKit
+  - Firebase/Core
+  - GrowingTextView
+  - iRate
+  - OpenGraph
+  - pop
+  - SDAVAssetExportSession (from `https://github.com/rs/SDAVAssetExportSession.git`)
+  - Starscream
+  - SwipeView
+  - TagListView (= 1.2.0)
+  - TMTumblrSDK/APIClient
+  - TwitterKit
+  - XLActionController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActiveLabel
+    - Alamofire
+    - AlamofireImage
+    - Bolts
+    - Crashlytics
+    - DateTools
+    - Fabric
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKMessengerShareKit
+    - FBSDKShareKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - GoogleToolboxForMac
+    - GrowingTextView
+    - iRate
+    - JXHTTP
+    - nanopb
+    - OpenGraph
+    - pop
+    - Spectacles
+    - Starscream
+    - SwipeView
+    - TagListView
+    - TMTumblrSDK
+    - TwitterCore
+    - TwitterKit
+    - XLActionController
+
+EXTERNAL SOURCES:
+  SDAVAssetExportSession:
+    :git: https://github.com/rs/SDAVAssetExportSession.git
+
+CHECKOUT OPTIONS:
+  SDAVAssetExportSession:
+    :commit: af4728e5fb83b618a6a548fe78b1bdf6b612fba1
+    :git: https://github.com/rs/SDAVAssetExportSession.git
+
+SPEC CHECKSUMS:
+  ActiveLabel: c4fdd14a288483e98b5a3dff0ab214699aeee74a
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
+  FBSDKCoreKit: 1a5b2e3ceb5ca827a53c54aa5f4a3480efff80d2
+  FBSDKLoginKit: 00a3d65d1226852f9d76dcddff01981e5e6d9c38
+  FBSDKMessengerShareKit: 41c0b1a667d685c9433f993eb9611b3d5074e1cb
+  FBSDKShareKit: 2ddbd7e6432023fff957af62e23a3671b84319f7
+  Firebase: 355bd535bfdacaa82a7fe8d9784115edefd6fc03
+  FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
+  FirebaseCore: 4c28e3b9708ba48a765e76515f913a71596eb5dd
+  FirebaseInstanceID: f3f0657372592ecdfdfe2cac604a5a75758376a6
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GrowingTextView: 8958f4fb7419de58dd622021b2d0696487e00e70
+  iRate: 4fc69958788624545e5d050c8ffd20884013c3f1
+  JXHTTP: c37120f210cd2dfcb3470d70239f5253335e2f1a
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  OpenGraph: 28ae247b6c834e3cce77c6cdd09face7511d4f04
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  SDAVAssetExportSession: 0926b6bf12cc4e9179540957cf5c4233b78f4af0
+  Spectacles: 8dc60711140320653724560e2d6bbb8a8f0940e4
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  SwipeView: bd67cfaf7760c036438446b3ccb28a3b84fce009
+  TagListView: 999e1df50c0f6b9ca927fae705c86a7e3b6ee9ba
+  TMTumblrSDK: bafecf74bb5dae10d42536d35229e40c18e9e4a1
+  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
+  TwitterKit: bc7bd086b9b724a1d888745a054e1d0b1ecc4f3f
+  XLActionController: 007868251c0eed70d649d06c1625259b73b3a600
+
+PODFILE CHECKSUM: 7c3c5a67faa136f403d13d9010bfedb436eaa9d7
+
+COCOAPODS: 1.5.3

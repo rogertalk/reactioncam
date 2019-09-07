@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MaterialIcons-Regular.ttf">
+            <string>MaterialIcons-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SendGiftCell" rowHeight="40" id="BpS-O9-eDB" customClass="SeparatorCell" customModule="ReactionCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BpS-O9-eDB" id="Hrx-Nb-z4H">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send custom gift 🤗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D84-bT-e8E">
+                        <rect key="frame" x="16" y="-0.5" width="217.5" height="80.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="S7Z-FE-hzI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keyboard_arrow_right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rp-5R-2Jk">
+                        <rect key="frame" x="290" y="27" width="20" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="vFv-Su-ZPe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MaterialIcons-Regular" family="Material Icons" pointSize="28"/>
+                        <color key="textColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="D84-bT-e8E" firstAttribute="top" secondItem="Hrx-Nb-z4H" secondAttribute="top" id="81T-8e-LKG"/>
+                    <constraint firstAttribute="trailing" secondItem="5rp-5R-2Jk" secondAttribute="trailing" constant="16" id="KOS-Hf-6py"/>
+                    <constraint firstItem="D84-bT-e8E" firstAttribute="leading" secondItem="Hrx-Nb-z4H" secondAttribute="leading" constant="16" id="QAJ-zA-hwX"/>
+                    <constraint firstItem="5rp-5R-2Jk" firstAttribute="centerY" secondItem="Hrx-Nb-z4H" secondAttribute="centerY" constant="1" id="etW-Ww-06R"/>
+                    <constraint firstItem="D84-bT-e8E" firstAttribute="centerY" secondItem="Hrx-Nb-z4H" secondAttribute="centerY" id="ucH-Tb-JFW"/>
+                    <constraint firstAttribute="bottom" secondItem="D84-bT-e8E" secondAttribute="bottom" id="z4s-Xz-bAf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="-109" y="8"/>
+        </tableViewCell>
+    </objects>
+</document>

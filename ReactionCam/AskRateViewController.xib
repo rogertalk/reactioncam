@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MaterialIcons-Regular.ttf">
+            <string>MaterialIcons-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="f3L-mi-g1j" customClass="AskRateViewController" customModule="ReactionCam" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="8XI-KF-eXf"/>
+                <viewControllerLayoutGuide type="bottom" id="AXL-QX-gnH"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="GIn-Qb-Jye">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qsr-ie-9gR" customClass="MaterialView" customModule="ReactionCam" customModuleProvider="target">
+                        <rect key="frame" x="27" y="223" width="320" height="220"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emojiBackground" translatesAutoresizingMaskIntoConstraints="NO" id="2z6-19-Q7d">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great!! 😋  Would you let others know what you think by rating?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZK-c5-k2Z">
+                                <rect key="frame" x="20" y="31" width="280" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="qMe-CO-Rpt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4g-QV-Dwy" customClass="HighlightButton" customModule="ReactionCam" customModuleProvider="target">
+                                <rect key="frame" x="40" y="149" width="70" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="1Mf-6F-kas"/>
+                                    <constraint firstAttribute="height" constant="45" id="w8O-Eo-t8D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="noRatingTapped:" destination="f3L-mi-g1j" eventType="touchUpInside" id="1lp-Va-xsw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyw-FD-yWj" customClass="HighlightButton" customModule="ReactionCam" customModuleProvider="target">
+                                <rect key="frame" x="126" y="149" width="150" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="7Fw-e0-van"/>
+                                    <constraint firstAttribute="height" constant="45" id="PUO-Xi-94z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Ok, sure 🎁">
+                                    <color key="titleColor" red="0.19437385739999999" green="0.1953915215" blue="0.1953915215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rateTapped:" destination="f3L-mi-g1j" eventType="touchUpInside" id="c3Q-q1-hnk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33725490200000002" green="0.20784313730000001" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2z6-19-Q7d" firstAttribute="height" secondItem="Qsr-ie-9gR" secondAttribute="height" id="0F7-0b-Sha"/>
+                            <constraint firstItem="BZK-c5-k2Z" firstAttribute="centerX" secondItem="Qsr-ie-9gR" secondAttribute="centerX" id="0Ov-kk-aCm"/>
+                            <constraint firstItem="X4g-QV-Dwy" firstAttribute="top" secondItem="BZK-c5-k2Z" secondAttribute="bottom" constant="32" id="5Zr-xL-NP3"/>
+                            <constraint firstItem="2z6-19-Q7d" firstAttribute="centerX" secondItem="Qsr-ie-9gR" secondAttribute="centerX" id="IeO-vW-Zyo"/>
+                            <constraint firstAttribute="height" constant="220" id="J1X-ZL-sg8"/>
+                            <constraint firstItem="Fyw-FD-yWj" firstAttribute="leading" secondItem="X4g-QV-Dwy" secondAttribute="trailing" constant="16" id="KV5-45-x0J"/>
+                            <constraint firstItem="X4g-QV-Dwy" firstAttribute="centerX" secondItem="Qsr-ie-9gR" secondAttribute="centerX" constant="-85" id="UFI-cj-o7s"/>
+                            <constraint firstItem="2z6-19-Q7d" firstAttribute="width" secondItem="Qsr-ie-9gR" secondAttribute="width" id="aQK-P6-gNI"/>
+                            <constraint firstItem="Fyw-FD-yWj" firstAttribute="top" secondItem="X4g-QV-Dwy" secondAttribute="top" id="m2V-Lo-F59"/>
+                            <constraint firstAttribute="width" constant="320" id="nAW-Ar-PFM"/>
+                            <constraint firstItem="BZK-c5-k2Z" firstAttribute="centerY" secondItem="Qsr-ie-9gR" secondAttribute="centerY" constant="-36" id="ncH-xz-bod"/>
+                            <constraint firstItem="2z6-19-Q7d" firstAttribute="centerY" secondItem="Qsr-ie-9gR" secondAttribute="centerY" id="vpO-9N-AaQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB" customClass="MaterialView" customModule="ReactionCam" customModuleProvider="target">
+                        <rect key="frame" x="27" y="233" width="320" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emojiBackground" translatesAutoresizingMaskIntoConstraints="NO" id="UZq-03-BZG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey, like my app? 😄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siy-8W-0UT">
+                                <rect key="frame" x="56" y="55" width="208" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e38-Uy-mbk" customClass="HighlightButton" customModule="ReactionCam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="113.5" width="130" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="7I3-ZB-TOu"/>
+                                    <constraint firstAttribute="height" constant="45" id="tJw-v1-WK0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Not really">
+                                    <color key="titleColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dislikeTapped:" destination="f3L-mi-g1j" eventType="touchUpInside" id="2r8-5W-xgQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biK-pi-9ZR" customClass="HighlightButton" customModule="ReactionCam" customModuleProvider="target">
+                                <rect key="frame" x="170" y="113.5" width="130" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="6B8-4l-laH"/>
+                                    <constraint firstAttribute="width" constant="130" id="z95-4c-HQx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="YES! →">
+                                    <color key="titleColor" red="0.19437385739999999" green="0.1953915215" blue="0.1953915215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="likeTapped:" destination="f3L-mi-g1j" eventType="touchUpInside" id="IXg-Z9-iC2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFp-4T-xL5">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rFp-4T-xL5" secondAttribute="height" multiplier="1:1" id="JPb-xk-LrJ"/>
+                                    <constraint firstAttribute="width" constant="40" id="VcD-Re-c4L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MaterialIcons-Regular" family="Material Icons" pointSize="18"/>
+                                <state key="normal" title="close">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeTapped:" destination="f3L-mi-g1j" eventType="touchUpInside" id="8uL-ed-WDY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33725490200000002" green="0.20784313730000001" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UZq-03-BZG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="067-FN-J1f"/>
+                            <constraint firstItem="rFp-4T-xL5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1N7-Hm-53l"/>
+                            <constraint firstItem="biK-pi-9ZR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="75" id="23U-m9-4F2"/>
+                            <constraint firstItem="UZq-03-BZG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Got-o1-0xF"/>
+                            <constraint firstItem="rFp-4T-xL5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PdH-dH-mTG"/>
+                            <constraint firstAttribute="width" constant="320" id="R9Q-UY-WXV"/>
+                            <constraint firstItem="UZq-03-BZG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RJ4-BJ-EW6"/>
+                            <constraint firstItem="biK-pi-9ZR" firstAttribute="top" secondItem="e38-Uy-mbk" secondAttribute="top" id="TWx-me-hbJ"/>
+                            <constraint firstItem="siy-8W-0UT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WL4-5T-ts5"/>
+                            <constraint firstItem="e38-Uy-mbk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-75" id="ZUY-rV-8kf"/>
+                            <constraint firstAttribute="height" constant="200" id="a0l-kS-i42"/>
+                            <constraint firstItem="UZq-03-BZG" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="cOd-aF-iyq"/>
+                            <constraint firstItem="e38-Uy-mbk" firstAttribute="top" secondItem="siy-8W-0UT" secondAttribute="bottom" constant="32" id="nAC-tq-jeq"/>
+                            <constraint firstItem="siy-8W-0UT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-32" id="yqq-nT-1vq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dc-xr-7Ag" customClass="MaterialView" customModule="ReactionCam" customModuleProvider="target">
+                        <rect key="frame" x="27" y="233" width="320" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emojiBackground" translatesAutoresizingMaskIntoConstraints="NO" id="0aA-tI-o2N">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please tell me how to make reaction.cam better for you 😇" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWm-Zb-rfP">
+                                <rect key="frame" x="20" y="42.5" width="280" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="0jD-V1-Zbj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2S-hi-BGX" customClass="HighlightButton" customModule="ReactionCam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="117.5" width="130" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="1gH-vG-Xtp"/>
+                                    <constraint firstAttribute="height" constant="45" id="7ux-JZ-5X7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="No, thanks">
+                                    <color key="titleColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="noFeedbackTapped:" destination="f3L-mi-g1j" eventType="touchUpInside" id="UCu-d6-rhU"/>
+                                    <action selector="noRatingTapped:" destination="f3L-mi-g1j" eventType="touchUpInside" id="GiE-ba-cYs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSZ-8I-PSL" customClass="HighlightButton" customModule="ReactionCam" customModuleProvider="target">
+                                <rect key="frame" x="170" y="117.5" width="130" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="gk6-7k-u2R"/>
+                                    <constraint firstAttribute="height" constant="45" id="jsW-A4-28K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Ok, sure →">
+                                    <color key="titleColor" red="0.19437385739999999" green="0.1953915215" blue="0.1953915215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="feedbackTapped:" destination="f3L-mi-g1j" eventType="touchUpInside" id="fRP-Es-1zh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="W2S-hi-BGX" firstAttribute="top" secondItem="JWm-Zb-rfP" secondAttribute="bottom" constant="32" id="7pp-Rg-Uq6"/>
+                            <constraint firstItem="0aA-tI-o2N" firstAttribute="centerY" secondItem="0dc-xr-7Ag" secondAttribute="centerY" id="9aG-Jo-ROZ"/>
+                            <constraint firstItem="0aA-tI-o2N" firstAttribute="height" secondItem="0dc-xr-7Ag" secondAttribute="height" id="9pe-mz-BM2"/>
+                            <constraint firstAttribute="width" constant="320" id="CAm-TT-bYY"/>
+                            <constraint firstItem="FSZ-8I-PSL" firstAttribute="top" secondItem="W2S-hi-BGX" secondAttribute="top" id="IDC-yw-GQl"/>
+                            <constraint firstAttribute="height" constant="200" id="JoB-yv-FDz"/>
+                            <constraint firstItem="FSZ-8I-PSL" firstAttribute="centerX" secondItem="0dc-xr-7Ag" secondAttribute="centerX" constant="75" id="VrV-X9-his"/>
+                            <constraint firstItem="JWm-Zb-rfP" firstAttribute="centerY" secondItem="0dc-xr-7Ag" secondAttribute="centerY" constant="-36" id="WcO-qT-8GZ"/>
+                            <constraint firstItem="0aA-tI-o2N" firstAttribute="centerX" secondItem="0dc-xr-7Ag" secondAttribute="centerX" id="a5y-6S-1nZ"/>
+                            <constraint firstItem="W2S-hi-BGX" firstAttribute="centerX" secondItem="0dc-xr-7Ag" secondAttribute="centerX" constant="-75" id="bX3-u8-ddy"/>
+                            <constraint firstItem="JWm-Zb-rfP" firstAttribute="centerX" secondItem="0dc-xr-7Ag" secondAttribute="centerX" id="jR3-PI-1Hs"/>
+                            <constraint firstItem="0aA-tI-o2N" firstAttribute="width" secondItem="0dc-xr-7Ag" secondAttribute="width" id="uqq-ME-F3O"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Qsr-ie-9gR" firstAttribute="centerY" secondItem="GIn-Qb-Jye" secondAttribute="centerY" id="69e-da-v16"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="centerX" secondItem="GIn-Qb-Jye" secondAttribute="centerX" id="Nyr-Gf-Vi4"/>
+                    <constraint firstItem="Qsr-ie-9gR" firstAttribute="centerX" secondItem="GIn-Qb-Jye" secondAttribute="centerX" id="WBZ-i1-q7s"/>
+                    <constraint firstItem="0dc-xr-7Ag" firstAttribute="centerX" secondItem="GIn-Qb-Jye" secondAttribute="centerX" id="c4x-xl-Rt6"/>
+                    <constraint firstItem="0dc-xr-7Ag" firstAttribute="centerY" secondItem="GIn-Qb-Jye" secondAttribute="centerY" id="lci-Sx-jqC"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="centerY" secondItem="GIn-Qb-Jye" secondAttribute="centerY" id="wzW-fF-xss"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="feedbackView" destination="0dc-xr-7Ag" id="Z8Y-c1-ens"/>
+                <outlet property="likeView" destination="iN0-l3-epB" id="A8a-tY-8MI"/>
+                <outlet property="rateView" destination="Qsr-ie-9gR" id="0Wz-mS-5aT"/>
+            </connections>
+            <point key="canvasLocation" x="43.5" y="226.5"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="emojiBackground" width="1024" height="1024"/>
+    </resources>
+</document>

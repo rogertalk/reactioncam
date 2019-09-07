@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UploadCell" id="gpb-pn-OPc" customClass="UploadCell" customModule="ReactionCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuW-cR-aN4">
+                        <rect key="frame" x="0.0" y="0.0" width="419" height="155"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Zgc-Bx-eJK">
+                                <rect key="frame" x="16" y="67" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qG-5U-zhN">
+                                <rect key="frame" x="48" y="65" width="83" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cKk-JG-ke4">
+                                <rect key="frame" x="48" y="85" width="355" height="2"/>
+                                <color key="progressTintColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3qG-5U-zhN" firstAttribute="leading" secondItem="Zgc-Bx-eJK" secondAttribute="trailing" constant="12" id="8qV-qy-top"/>
+                            <constraint firstItem="cKk-JG-ke4" firstAttribute="top" secondItem="3qG-5U-zhN" secondAttribute="bottom" constant="2" id="YGQ-OF-HbZ"/>
+                            <constraint firstItem="Zgc-Bx-eJK" firstAttribute="centerY" secondItem="nuW-cR-aN4" secondAttribute="centerY" id="g0K-aM-FmI"/>
+                            <constraint firstItem="cKk-JG-ke4" firstAttribute="bottom" secondItem="Zgc-Bx-eJK" secondAttribute="bottom" id="qZ0-9S-sC0"/>
+                            <constraint firstAttribute="trailing" secondItem="cKk-JG-ke4" secondAttribute="trailing" constant="16" id="qjY-cP-Xv7"/>
+                            <constraint firstItem="Zgc-Bx-eJK" firstAttribute="leading" secondItem="nuW-cR-aN4" secondAttribute="leading" constant="16" id="sS7-sQ-Tn3"/>
+                            <constraint firstItem="cKk-JG-ke4" firstAttribute="leading" secondItem="3qG-5U-zhN" secondAttribute="leading" id="ycr-Bc-cRN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="nuW-cR-aN4" firstAttribute="height" secondItem="gpb-pn-OPc" secondAttribute="height" id="H4B-2B-ug9"/>
+                <constraint firstItem="nuW-cR-aN4" firstAttribute="width" secondItem="gpb-pn-OPc" secondAttribute="width" id="UK0-bk-YJb"/>
+                <constraint firstItem="nuW-cR-aN4" firstAttribute="centerY" secondItem="gpb-pn-OPc" secondAttribute="centerY" id="egT-om-itU"/>
+                <constraint firstItem="nuW-cR-aN4" firstAttribute="centerX" secondItem="gpb-pn-OPc" secondAttribute="centerX" id="t2k-Y6-KK0"/>
+            </constraints>
+            <size key="customSize" width="419" height="155"/>
+            <connections>
+                <outlet property="activityIndicatorView" destination="Zgc-Bx-eJK" id="sfb-rq-1gH"/>
+                <outlet property="progressView" destination="cKk-JG-ke4" id="dUd-PX-XR5"/>
+                <outlet property="statusLabel" destination="3qG-5U-zhN" id="cu5-dF-CGa"/>
+            </connections>
+            <point key="canvasLocation" x="111.5" y="391.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

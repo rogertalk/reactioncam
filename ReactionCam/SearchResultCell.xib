@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultCell" rowHeight="200" id="MFr-b2-Hgy" customClass="SearchResultCell" customModule="ReactionCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MFr-b2-Hgy" id="tss-ic-4If">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDk-WW-IyU" customClass="ContentSuggestionView" customModule="ReactionCam" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JDk-WW-IyU" firstAttribute="width" secondItem="tss-ic-4If" secondAttribute="width" id="Dav-lv-VyZ"/>
+                    <constraint firstItem="JDk-WW-IyU" firstAttribute="height" secondItem="tss-ic-4If" secondAttribute="height" id="EBz-k6-rK2"/>
+                    <constraint firstItem="JDk-WW-IyU" firstAttribute="centerY" secondItem="tss-ic-4If" secondAttribute="centerY" id="FRJ-52-13i"/>
+                    <constraint firstItem="JDk-WW-IyU" firstAttribute="centerX" secondItem="tss-ic-4If" secondAttribute="centerX" id="g4N-Ej-tYa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="contentSuggestionView" destination="JDk-WW-IyU" id="ziV-tp-kga"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

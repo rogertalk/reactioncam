@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Avn-Ng-WpC" customClass="PermissionsView" customModule="ReactionCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxQ-I4-8mi" customClass="HighlightButton" customModule="ReactionCam" customModuleProvider="target">
+                    <rect key="frame" x="62" y="287.5" width="250" height="60"/>
+                    <color key="backgroundColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="qkr-RU-ecr"/>
+                        <constraint firstAttribute="width" constant="250" id="r4A-rL-Nfv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                    <state key="normal" title="CAMERA">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="enableCameraTapped:" destination="Avn-Ng-WpC" eventType="touchUpInside" id="ed1-eK-cET"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emv-mu-nIe" customClass="HighlightButton" customModule="ReactionCam" customModuleProvider="target">
+                    <rect key="frame" x="63" y="363.5" width="250" height="60"/>
+                    <color key="backgroundColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="a7b-xs-tJc"/>
+                        <constraint firstAttribute="height" constant="60" id="qi7-pF-mvJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                    <state key="normal" title="MICROPHONE">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="enableMicrophoneTapped:" destination="Avn-Ng-WpC" eventType="touchUpInside" id="ZEF-Rw-UcN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You'll need these to record videos 👇" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDu-nS-Hf9">
+                    <rect key="frame" x="98.5" y="223.5" width="178" height="48"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="emv-mu-nIe" firstAttribute="centerX" secondItem="Avn-Ng-WpC" secondAttribute="centerX" id="HwB-LF-mZS"/>
+                <constraint firstItem="emv-mu-nIe" firstAttribute="top" secondItem="SxQ-I4-8mi" secondAttribute="bottom" constant="16" id="TZr-C5-sEd"/>
+                <constraint firstItem="MDu-nS-Hf9" firstAttribute="centerX" secondItem="Avn-Ng-WpC" secondAttribute="centerX" id="X8p-ph-KH5"/>
+                <constraint firstItem="SxQ-I4-8mi" firstAttribute="top" secondItem="MDu-nS-Hf9" secondAttribute="bottom" constant="16" id="aI0-ZU-4aT"/>
+                <constraint firstItem="SxQ-I4-8mi" firstAttribute="centerX" secondItem="Avn-Ng-WpC" secondAttribute="centerX" id="fvh-6H-WMZ"/>
+                <constraint firstItem="emv-mu-nIe" firstAttribute="centerY" secondItem="Avn-Ng-WpC" secondAttribute="centerY" constant="60" id="l0s-OX-eJA"/>
+            </constraints>
+            <connections>
+                <outlet property="enableCameraButton" destination="SxQ-I4-8mi" id="pTo-Vj-GJN"/>
+                <outlet property="enableMicrophoneButton" destination="emv-mu-nIe" id="VOt-Se-e3f"/>
+            </connections>
+        </view>
+    </objects>
+</document>

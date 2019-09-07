@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MaterialIcons-Regular.ttf">
+            <string>MaterialIcons-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="QfY-Yx-2QK" customClass="SimilarCreatorsViewController" customModule="ReactionCam" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="77n-vH-tCT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2c-AB-zza">
+                        <rect key="frame" x="-0.5" y="20" width="375" height="647"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdU-k4-2jW">
+                                <rect key="frame" x="0.0" y="8" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pdU-k4-2jW" secondAttribute="height" multiplier="1:1" id="Or2-cb-t9j"/>
+                                    <constraint firstAttribute="width" constant="50" id="tI3-qb-eZl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MaterialIcons-Regular" family="Material Icons" pointSize="26"/>
+                                <state key="normal" title="close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeTapped:" destination="QfY-Yx-2QK" eventType="touchUpInside" id="J1T-on-R2D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggested Reactors 👫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Or-QP-WS4">
+                                <rect key="frame" x="80" y="8" width="215.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y0G-mw-4kv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect with others that reacted to the same content." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Guv-JN-nmq">
+                                <rect key="frame" x="58" y="58" width="260" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="N1E-Qh-ogl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SgM-8k-ddE">
+                                <rect key="frame" x="0.0" y="110" width="375" height="428"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIQ-h5-qbh" customClass="HighlightButton" customModule="ReactionCam" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="570" width="200" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="WiP-YO-ICq"/>
+                                    <constraint firstAttribute="height" constant="45" id="jXN-rR-GXI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Subscribe (0)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="followSimilarCreatorsTapped:" destination="QfY-Yx-2QK" eventType="touchUpInside" id="Kdx-3U-Xm3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bIQ-h5-qbh" firstAttribute="centerX" secondItem="k2c-AB-zza" secondAttribute="centerX" id="2uh-Rt-2cB"/>
+                            <constraint firstItem="pdU-k4-2jW" firstAttribute="leading" secondItem="k2c-AB-zza" secondAttribute="leading" id="2zm-go-H62"/>
+                            <constraint firstItem="SgM-8k-ddE" firstAttribute="width" secondItem="k2c-AB-zza" secondAttribute="width" id="5SO-kS-RS0"/>
+                            <constraint firstAttribute="bottom" secondItem="bIQ-h5-qbh" secondAttribute="bottom" constant="32" id="8Kn-eb-0nL"/>
+                            <constraint firstItem="bIQ-h5-qbh" firstAttribute="top" secondItem="SgM-8k-ddE" secondAttribute="bottom" constant="32" id="GKP-Ph-pqz"/>
+                            <constraint firstItem="5Or-QP-WS4" firstAttribute="top" secondItem="k2c-AB-zza" secondAttribute="top" constant="8" id="HyQ-i6-cuc"/>
+                            <constraint firstItem="SgM-8k-ddE" firstAttribute="top" secondItem="Guv-JN-nmq" secondAttribute="bottom" constant="16" id="MEC-V7-X53"/>
+                            <constraint firstItem="pdU-k4-2jW" firstAttribute="centerY" secondItem="5Or-QP-WS4" secondAttribute="centerY" id="ML7-J2-uyX"/>
+                            <constraint firstItem="SgM-8k-ddE" firstAttribute="centerX" secondItem="k2c-AB-zza" secondAttribute="centerX" id="MUo-hS-45p"/>
+                            <constraint firstItem="5Or-QP-WS4" firstAttribute="centerX" secondItem="k2c-AB-zza" secondAttribute="centerX" id="TGN-kn-84A"/>
+                            <constraint firstItem="Guv-JN-nmq" firstAttribute="top" secondItem="5Or-QP-WS4" secondAttribute="bottom" id="dvr-2g-a9A"/>
+                            <constraint firstItem="Guv-JN-nmq" firstAttribute="centerX" secondItem="k2c-AB-zza" secondAttribute="centerX" id="yc0-Fg-ErU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="k2c-AB-zza" firstAttribute="bottom" secondItem="haB-ng-NNj" secondAttribute="bottom" id="9VC-KT-M3O"/>
+                    <constraint firstItem="k2c-AB-zza" firstAttribute="centerX" secondItem="haB-ng-NNj" secondAttribute="centerX" id="PaD-rg-Tfm"/>
+                    <constraint firstItem="haB-ng-NNj" firstAttribute="top" secondItem="k2c-AB-zza" secondAttribute="top" id="RCj-ug-wGb"/>
+                    <constraint firstItem="k2c-AB-zza" firstAttribute="width" secondItem="77n-vH-tCT" secondAttribute="width" id="gKC-cz-xye"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="haB-ng-NNj"/>
+            </view>
+            <connections>
+                <outlet property="followButton" destination="bIQ-h5-qbh" id="f1E-LB-Z5N"/>
+                <outlet property="similarCreatorsTableView" destination="SgM-8k-ddE" id="jQw-lg-0st"/>
+            </connections>
+            <point key="canvasLocation" x="-63.5" y="87.5"/>
+        </viewController>
+    </objects>
+</document>

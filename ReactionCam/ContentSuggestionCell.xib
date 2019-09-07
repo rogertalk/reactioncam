@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ef2-YJ-Mjv" customClass="ContentSuggestionCell" customModule="ReactionCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fEC-vL-AZe">
+                        <rect key="frame" x="16" y="12.5" width="80" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="6NJ-L9-muG"/>
+                            <constraint firstAttribute="width" secondItem="fEC-vL-AZe" secondAttribute="height" multiplier="4:3" id="PUI-eR-rCj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5D4-6D-do8">
+                        <rect key="frame" x="112" y="33" width="201" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fEC-vL-AZe" firstAttribute="leading" secondItem="ef2-YJ-Mjv" secondAttribute="leading" constant="16" id="2ba-ox-0pH"/>
+                <constraint firstItem="5D4-6D-do8" firstAttribute="leading" secondItem="fEC-vL-AZe" secondAttribute="trailing" constant="16" id="7bv-2q-kxG"/>
+                <constraint firstItem="5D4-6D-do8" firstAttribute="centerY" secondItem="ef2-YJ-Mjv" secondAttribute="centerY" id="DuR-wX-lfE"/>
+                <constraint firstItem="fEC-vL-AZe" firstAttribute="centerY" secondItem="ef2-YJ-Mjv" secondAttribute="centerY" id="dir-zt-RK9"/>
+                <constraint firstAttribute="trailing" secondItem="5D4-6D-do8" secondAttribute="trailing" constant="16" id="e2B-Mp-DCH"/>
+            </constraints>
+            <size key="customSize" width="329" height="85"/>
+            <connections>
+                <outlet property="thumbnailImageView" destination="fEC-vL-AZe" id="hMr-pc-WaF"/>
+                <outlet property="titleLabel" destination="5D4-6D-do8" id="cD4-iQ-E1V"/>
+            </connections>
+            <point key="canvasLocation" x="-246.5" y="1260.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

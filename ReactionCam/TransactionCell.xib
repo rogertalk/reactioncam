@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionCell" rowHeight="155" id="YIS-6v-0Dd" customClass="TransactionCell" customModule="ReactionCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YIS-6v-0Dd" id="nQP-qU-gJB">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="143.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sEe-IX-Y9u">
+                        <rect key="frame" x="8" y="16" width="48" height="48.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="IpE-mh-fdQ"/>
+                            <constraint firstAttribute="width" secondItem="sEe-IX-Y9u" secondAttribute="height" multiplier="1:1" id="ch7-O4-koc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="@okaytinashe gave 10 coins to @bossreacts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qry-3E-ARq" customClass="TagLabel" customModule="ReactionCam" customModuleProvider="target">
+                        <rect key="frame" x="64" y="16" width="246" height="38.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep up the good work bro!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XT-IE-NWq">
+                        <rect key="frame" x="64" y="62.5" width="246" height="65"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="sEe-IX-Y9u" firstAttribute="leading" secondItem="nQP-qU-gJB" secondAttribute="leading" constant="8" id="10Z-rz-7vE"/>
+                    <constraint firstItem="qry-3E-ARq" firstAttribute="leading" secondItem="sEe-IX-Y9u" secondAttribute="trailing" constant="8" id="5YU-y9-zGm"/>
+                    <constraint firstItem="8XT-IE-NWq" firstAttribute="leading" secondItem="qry-3E-ARq" secondAttribute="leading" id="Bis-7M-1g8"/>
+                    <constraint firstItem="8XT-IE-NWq" firstAttribute="top" secondItem="qry-3E-ARq" secondAttribute="bottom" constant="8" id="DYu-cS-vnM"/>
+                    <constraint firstAttribute="trailing" secondItem="qry-3E-ARq" secondAttribute="trailing" constant="8" id="Icl-xn-D1e"/>
+                    <constraint firstItem="qry-3E-ARq" firstAttribute="top" secondItem="nQP-qU-gJB" secondAttribute="top" constant="16" id="UmH-Ff-KwC"/>
+                    <constraint firstItem="8XT-IE-NWq" firstAttribute="trailing" secondItem="qry-3E-ARq" secondAttribute="trailing" id="bzu-Yx-8eL"/>
+                    <constraint firstAttribute="bottom" secondItem="8XT-IE-NWq" secondAttribute="bottom" constant="16" id="gmG-jU-mYE"/>
+                    <constraint firstItem="sEe-IX-Y9u" firstAttribute="top" secondItem="nQP-qU-gJB" secondAttribute="top" constant="16" id="yYY-3p-wWc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="8XT-IE-NWq" id="nDa-hc-kuo"/>
+                <outlet property="senderImageView" destination="sEe-IX-Y9u" id="Mk7-zf-uyK"/>
+                <outlet property="titleLabel" destination="qry-3E-ARq" id="g9L-cZ-axd"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="-270"/>
+        </tableViewCell>
+    </objects>
+</document>

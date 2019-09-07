@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MaterialIcons-Regular.ttf">
+            <string>MaterialIcons-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StatusIndicatorView" customModule="ReactionCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQ9-Rq-j7E">
+                    <rect key="frame" x="3.5" y="12" width="107" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-ij-Mp9">
+                    <rect key="frame" x="39" y="39" width="37" height="37"/>
+                    <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="check" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYC-iv-mlm">
+                    <rect key="frame" x="0.0" y="34" width="115" height="47"/>
+                    <fontDescription key="fontDescription" name="MaterialIcons-Regular" family="Material Icons" pointSize="47"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.1285121216975823" green="0.1285121216975823" blue="0.1285121216975823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WQ9-Rq-j7E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="3C9-4G-zu8"/>
+                <constraint firstItem="jYC-iv-mlm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6Bw-IW-92E"/>
+                <constraint firstItem="jYC-iv-mlm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Bhd-lV-oaj"/>
+                <constraint firstItem="ecq-ij-Mp9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="L78-zF-0hM"/>
+                <constraint firstItem="WQ9-Rq-j7E" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Lrn-FT-pfb"/>
+                <constraint firstItem="ecq-ij-Mp9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="R3J-Di-R8n"/>
+                <constraint firstItem="jYC-iv-mlm" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Y9O-9F-3yU"/>
+                <constraint firstItem="WQ9-Rq-j7E" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" constant="-8" id="YCh-j4-ZUv"/>
+                <constraint firstItem="ecq-ij-Mp9" firstAttribute="top" secondItem="WQ9-Rq-j7E" secondAttribute="bottom" constant="12" id="iIp-90-21w"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="confirmationLabel" destination="jYC-iv-mlm" id="zQN-Dd-Adg"/>
+                <outlet property="loader" destination="ecq-ij-Mp9" id="8NW-lA-4eq"/>
+                <outlet property="titleLabel" destination="WQ9-Rq-j7E" id="fz0-QJ-ubf"/>
+            </connections>
+            <point key="canvasLocation" x="727.5" y="446.5"/>
+        </view>
+    </objects>
+</document>

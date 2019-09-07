@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController storyboardIdentifier="AccountList" id="JQF-k3-Lhp" customClass="SuggestedUsersViewController" customModule="ReactionCam" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="giC-cd-5Tm">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlv-ZO-qLA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndo-MU-smS">
+                                <rect key="frame" x="319" y="21" width="44" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yVn-da-Bef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="1" green="0.8862745098" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backTapped:" destination="JQF-k3-Lhp" eventType="touchUpInside" id="wSD-rM-wpi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover Channels 📺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RP1-nk-Bpy">
+                                <rect key="frame" x="50" y="20" width="275" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="57h-K7-36t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.063485667110000005" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RP1-nk-Bpy" firstAttribute="bottom" secondItem="wlv-ZO-qLA" secondAttribute="bottom" id="9Rb-dS-EGx"/>
+                            <constraint firstItem="Ndo-MU-smS" firstAttribute="trailing" secondItem="wlv-ZO-qLA" secondAttribute="trailing" constant="-12" id="BqH-uH-lPy"/>
+                            <constraint firstItem="RP1-nk-Bpy" firstAttribute="width" secondItem="wlv-ZO-qLA" secondAttribute="width" constant="-100" id="Jcz-bU-qZO"/>
+                            <constraint firstItem="Ndo-MU-smS" firstAttribute="centerY" secondItem="RP1-nk-Bpy" secondAttribute="centerY" constant="1" id="NI1-Og-Atj"/>
+                            <constraint firstItem="Ndo-MU-smS" firstAttribute="height" secondItem="RP1-nk-Bpy" secondAttribute="height" id="rkQ-5B-c18"/>
+                            <constraint firstItem="RP1-nk-Bpy" firstAttribute="centerX" secondItem="wlv-ZO-qLA" secondAttribute="centerX" id="xpL-ua-5aq"/>
+                        </constraints>
+                    </view>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="65" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="ily-kZ-iGC">
+                        <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                    </tableView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="ily-kZ-iGC" firstAttribute="bottom" secondItem="MIo-I2-UOD" secondAttribute="bottom" id="9md-Un-6cG"/>
+                    <constraint firstItem="wlv-ZO-qLA" firstAttribute="centerX" secondItem="MIo-I2-UOD" secondAttribute="centerX" id="ATC-M5-k3I"/>
+                    <constraint firstItem="ily-kZ-iGC" firstAttribute="leading" secondItem="MIo-I2-UOD" secondAttribute="leading" id="Uss-FF-wll"/>
+                    <constraint firstItem="ily-kZ-iGC" firstAttribute="trailing" secondItem="MIo-I2-UOD" secondAttribute="trailing" id="Yur-Ic-Aoy"/>
+                    <constraint firstItem="wlv-ZO-qLA" firstAttribute="top" secondItem="giC-cd-5Tm" secondAttribute="top" id="a0a-FR-Gv5"/>
+                    <constraint firstItem="ily-kZ-iGC" firstAttribute="top" secondItem="wlv-ZO-qLA" secondAttribute="bottom" id="eQg-hx-7RK"/>
+                    <constraint firstItem="wlv-ZO-qLA" firstAttribute="width" secondItem="giC-cd-5Tm" secondAttribute="width" id="rZB-0d-dsO"/>
+                    <constraint firstItem="wlv-ZO-qLA" firstAttribute="bottom" secondItem="MIo-I2-UOD" secondAttribute="top" constant="40" id="zgs-nT-0Ra"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="MIo-I2-UOD"/>
+            </view>
+            <connections>
+                <outlet property="friendsTable" destination="ily-kZ-iGC" id="ZXv-ls-7gS"/>
+            </connections>
+            <point key="canvasLocation" x="2225" y="1564"/>
+        </viewController>
+    </objects>
+</document>

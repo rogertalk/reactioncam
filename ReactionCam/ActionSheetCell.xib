@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="TCb-WN-e1v" customClass="ActionSheetCell" customModule="ReactionCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Action title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FRM-iV-OZl">
+                        <rect key="frame" x="16" y="5" width="468" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="lwd-wm-aU8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z9l-6S-TFY">
+                        <rect key="frame" x="16" y="60" width="468" height="0.0"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="wQk-Sw-7un"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Z9l-6S-TFY" firstAttribute="leading" secondItem="TCb-WN-e1v" secondAttribute="leading" constant="16" id="8pI-A9-hld"/>
+                <constraint firstAttribute="bottom" secondItem="Z9l-6S-TFY" secondAttribute="bottom" id="FJu-74-ufV"/>
+                <constraint firstAttribute="trailing" secondItem="Z9l-6S-TFY" secondAttribute="trailing" constant="16" id="LTn-bS-6nI"/>
+                <constraint firstItem="FRM-iV-OZl" firstAttribute="leading" secondItem="TCb-WN-e1v" secondAttribute="leading" constant="16" id="Sk3-1e-FQR"/>
+                <constraint firstAttribute="trailing" secondItem="FRM-iV-OZl" secondAttribute="trailing" constant="16" id="T77-51-HuR"/>
+                <constraint firstItem="FRM-iV-OZl" firstAttribute="centerY" secondItem="TCb-WN-e1v" secondAttribute="centerY" id="jw7-ci-wwq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="sG8-9p-0BI"/>
+            <size key="customSize" width="500" height="131"/>
+            <connections>
+                <outlet property="actionTitleLabel" destination="FRM-iV-OZl" id="MLB-wv-Fdk"/>
+                <outlet property="separatorView" destination="Z9l-6S-TFY" id="s60-g3-AIm"/>
+            </connections>
+            <point key="canvasLocation" x="307" y="109"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MaterialIcons-Regular.ttf">
+            <string>MaterialIcons-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContentGridCell" id="mRf-ak-RwA" customClass="ContentGridCell" customModule="ReactionCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="273" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="273" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xm-ba-kWm">
+                        <rect key="frame" x="-0.5" y="0.0" width="273" height="230"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="relatedContent" translatesAutoresizingMaskIntoConstraints="NO" id="MMd-i3-xc7">
+                                <rect key="frame" x="-0.5" y="0.0" width="273" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MMd-i3-xc7" secondAttribute="height" multiplier="16:9" id="M7q-iQ-dn2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoy-uf-qsz" customClass="LoaderButton" customModule="ReactionCam" customModuleProvider="target">
+                                <rect key="frame" x="5" y="52" width="263" height="50"/>
+                                <fontDescription key="fontDescription" name="MaterialIcons-Regular" family="Material Icons" pointSize="32"/>
+                                <state key="normal" title="play_circle_outline">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TiQ-U5-3mJ">
+                                <rect key="frame" x="8.5" y="154" width="257" height="76"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CG1-ks-8mS">
+                                        <rect key="frame" x="0.0" y="8" width="257" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="CG1-ks-8mS" firstAttribute="top" secondItem="TiQ-U5-3mJ" secondAttribute="top" constant="8" id="0hI-oM-zVJ"/>
+                                    <constraint firstItem="CG1-ks-8mS" firstAttribute="leading" secondItem="TiQ-U5-3mJ" secondAttribute="leading" id="EyA-qC-LmS"/>
+                                    <constraint firstAttribute="trailing" secondItem="CG1-ks-8mS" secondAttribute="trailing" id="h8s-HF-3tT"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CG1-ks-8mS" secondAttribute="bottom" constant="8" id="xWE-IA-5Mc"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S6U-zk-0Cg">
+                                <rect key="frame" x="8" y="8" width="142" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMR-D0-ON4">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="MaterialIcons-Regular" family="Material Icons" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PINNED VIDEO" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fku-k0-ddr">
+                                        <rect key="frame" x="41" y="0.0" width="101" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lMR-D0-ON4" firstAttribute="centerY" secondItem="S6U-zk-0Cg" secondAttribute="centerY" id="7wb-TF-y8n"/>
+                                    <constraint firstItem="lMR-D0-ON4" firstAttribute="leading" secondItem="S6U-zk-0Cg" secondAttribute="leading" priority="999" id="CJB-Tw-BlV"/>
+                                    <constraint firstItem="fku-k0-ddr" firstAttribute="height" secondItem="S6U-zk-0Cg" secondAttribute="height" id="Idk-Lg-agS"/>
+                                    <constraint firstItem="lMR-D0-ON4" firstAttribute="height" secondItem="S6U-zk-0Cg" secondAttribute="height" id="SjN-B8-7ZZ"/>
+                                    <constraint firstItem="fku-k0-ddr" firstAttribute="centerY" secondItem="S6U-zk-0Cg" secondAttribute="centerY" id="bme-el-bhh"/>
+                                    <constraint firstAttribute="height" constant="20" id="chs-3v-xst"/>
+                                    <constraint firstItem="fku-k0-ddr" firstAttribute="leading" secondItem="lMR-D0-ON4" secondAttribute="trailing" priority="999" constant="2" id="lVK-bF-1QU"/>
+                                    <constraint firstAttribute="trailing" secondItem="fku-k0-ddr" secondAttribute="trailing" priority="999" id="uUJ-Yc-MLJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S6U-zk-0Cg" firstAttribute="top" secondItem="0xm-ba-kWm" secondAttribute="top" constant="8" id="0w4-zR-tWW"/>
+                            <constraint firstItem="TiQ-U5-3mJ" firstAttribute="width" secondItem="0xm-ba-kWm" secondAttribute="width" constant="-16" id="Lcq-kH-TM5"/>
+                            <constraint firstItem="MMd-i3-xc7" firstAttribute="top" secondItem="0xm-ba-kWm" secondAttribute="top" id="N2m-zj-Ris"/>
+                            <constraint firstItem="S6U-zk-0Cg" firstAttribute="leading" secondItem="0xm-ba-kWm" secondAttribute="leading" constant="8" id="P8B-QG-vqi"/>
+                            <constraint firstItem="uoy-uf-qsz" firstAttribute="centerX" secondItem="MMd-i3-xc7" secondAttribute="centerX" id="RP0-0M-0vq"/>
+                            <constraint firstItem="TiQ-U5-3mJ" firstAttribute="top" secondItem="MMd-i3-xc7" secondAttribute="bottom" id="Rr1-oz-kha"/>
+                            <constraint firstItem="MMd-i3-xc7" firstAttribute="width" secondItem="0xm-ba-kWm" secondAttribute="width" id="TY8-8m-lRg"/>
+                            <constraint firstAttribute="bottom" secondItem="TiQ-U5-3mJ" secondAttribute="bottom" id="ens-PU-4be"/>
+                            <constraint firstItem="MMd-i3-xc7" firstAttribute="centerX" secondItem="0xm-ba-kWm" secondAttribute="centerX" id="kh9-BO-mAS"/>
+                            <constraint firstItem="uoy-uf-qsz" firstAttribute="centerY" secondItem="MMd-i3-xc7" secondAttribute="centerY" id="m0S-5Y-vlw"/>
+                            <constraint firstItem="TiQ-U5-3mJ" firstAttribute="centerX" secondItem="0xm-ba-kWm" secondAttribute="centerX" id="rlG-ck-Kpd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0xm-ba-kWm" firstAttribute="centerX" secondItem="mRf-ak-RwA" secondAttribute="centerX" id="Bw0-EN-EN4"/>
+                <constraint firstItem="0xm-ba-kWm" firstAttribute="centerY" secondItem="mRf-ak-RwA" secondAttribute="centerY" id="Onu-Jp-cDf"/>
+                <constraint firstItem="0xm-ba-kWm" firstAttribute="width" secondItem="mRf-ak-RwA" secondAttribute="width" id="aQY-Y6-SV8"/>
+                <constraint firstItem="0xm-ba-kWm" firstAttribute="height" secondItem="mRf-ak-RwA" secondAttribute="height" id="u7z-hB-QAB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Vho-6I-xIu"/>
+            <size key="customSize" width="273" height="230"/>
+            <connections>
+                <outlet property="pinnedBadgeView" destination="S6U-zk-0Cg" id="BOx-ma-gZE"/>
+                <outlet property="thumbnailImageView" destination="MMd-i3-xc7" id="uIP-H2-s1t"/>
+                <outlet property="titleLabel" destination="CG1-ks-8mS" id="knZ-Mi-yan"/>
+            </connections>
+            <point key="canvasLocation" x="-35.5" y="395"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="relatedContent" width="70" height="70"/>
+    </resources>
+</document>

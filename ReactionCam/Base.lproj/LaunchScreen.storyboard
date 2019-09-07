@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController storyboardIdentifier="launch" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reactionCam" translatesAutoresizingMaskIntoConstraints="NO" id="H3Y-P5-e2L">
+                                <rect key="frame" x="37.5" y="284.5" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="dgO-8Q-7Wj"/>
+                                    <constraint firstAttribute="width" constant="300" id="snS-zz-LLs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyeBottomLeft" translatesAutoresizingMaskIntoConstraints="NO" id="qW5-7j-Lxn">
+                                <rect key="frame" x="0.0" y="517" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qW5-7j-Lxn" secondAttribute="height" multiplier="1:1" id="g8F-ww-nfi"/>
+                                    <constraint firstAttribute="width" constant="150" id="ly3-gm-sdQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H3Y-P5-e2L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6qb-ns-oTD"/>
+                            <constraint firstItem="H3Y-P5-e2L" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.9" id="Fwz-M9-Qws"/>
+                            <constraint firstItem="qW5-7j-Lxn" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="cGz-v9-JBh"/>
+                            <constraint firstAttribute="bottom" secondItem="qW5-7j-Lxn" secondAttribute="bottom" id="qk1-XO-OYW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eyeBottomLeft" width="150" height="150"/>
+        <image name="reactionCam" width="304" height="31"/>
+    </resources>
+</document>
